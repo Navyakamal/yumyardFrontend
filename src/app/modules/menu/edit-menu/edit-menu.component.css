@@ -1,0 +1,9 @@
+.container{
+    margin-top: 5%;
+    margin-bottom: 4%;
+    border: 1px solid rgba(128, 128, 128, 0.792);
+    input,select{
+    background-color: rgb(200, 198, 198);
+     
+    }
+}

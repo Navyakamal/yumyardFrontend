@@ -1,0 +1,25 @@
+<div class="cont vh-100">
+  <img src="https://i.postimg.cc/FsXw9B7S/pexels-photo-887723.jpg" alt="" class="bg-image">
+  <div class="login p-3 text-center">
+      <h1>Sign in</h1>
+      <form [formGroup]="loginFormModel">
+          <div class="form-floating mb-4 mt-4">
+              <input formControlName="email" name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+              <!-- error message -->
+              <div *ngIf="loginFormModel.get('email')?.errors && loginFormModel.get('email')?.touched">
+                  <p class="text-danger">please enter a valid email address</p>
+              </div>
+          </div>
+          <div class="form-floating mb-5">
+              <input formControlName="psw" name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+              <!-- error message -->
+              <div *ngIf="loginFormModel.get('psw')?.errors && loginFormModel.get('psw')?.touched">
+                  <p class="text-danger">please include letters and numbers only</p>
+              </div>
+          </div>
+      </form>
+      <button (click)="login()" class="btn w-100">Login</button>
+  </div>
+</div>

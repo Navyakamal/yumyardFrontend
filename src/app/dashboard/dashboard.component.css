@@ -1,0 +1,15 @@
+
+#d{
+    background-color: rgba(255, 68, 0, 0.811);
+    height: 530px;
+    border-radius: 15px;
+
+}
+.dash{
+    h3{
+        font-family: "DM Serif Display", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+    }
+}

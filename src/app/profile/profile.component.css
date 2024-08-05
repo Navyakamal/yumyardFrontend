@@ -1,0 +1,9 @@
+.profileimg{
+    margin-left: 35%;
+}
+.b1{
+    background-color: rgba(255, 68, 0, 0.811);
+}
+.b1:hover{
+    background-color: rgb(255, 68, 0);
+}

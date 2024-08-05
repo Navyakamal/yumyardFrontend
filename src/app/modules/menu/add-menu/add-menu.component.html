@@ -1,0 +1,54 @@
+<div>
+    <div class="container shadow w-50 w-md-75 w-lg-50 p-5">
+        <form action="" [formGroup]="addForm">
+            <div class="form-floating mb-3">
+                <input formControlName="dishname" name="dishname" type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Name of the dish</label>
+              <!-- error message -->
+              <div *ngIf="addForm.get('dishname')?.errors&&addForm.get('dishname')?.touched">
+                <p class="text-danger">please enter the name of the dish</p>
+               </div>
+  
+              </div>
+              <div class="form-floating mb-3">
+                <input formControlName="price" name="price" type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Price</label>
+              <!-- error message -->
+              <div *ngIf="addForm.get('price')?.errors&&addForm.get('price')?.touched">
+                <p class="text-danger">please include numbers only</p>
+               </div>
+ 
+              </div>
+              <div>
+                <select formControlName="category" name="category" id="category" class="w-100 p-2 rounded mb-4" name="category" >
+                    <option value="" class="disabled">Category</option>
+                    <option value="1">Starter</option>
+                    <option value="2">Main Course</option>
+                    <option value="3">Appetizer</option>
+                    <option value="4">Dessert</option>
+                    <option value="5">Drink</option>
+
+                </select>
+               <!-- error message -->
+               <div *ngIf="addForm.get('category')?.errors&&addForm.get('category')?.touched">
+                <p class="text-danger">Required</p>
+               </div>
+              
+              </div>
+              <div class="form-floating mb-3">
+                <input formControlName="image" name="image" type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Image url</label>
+              <!-- error message -->
+              <div *ngIf="addForm.get('image')?.errors&&addForm.get('image')?.touched">
+                <p class="text-danger">please enter image url</p>
+               </div>
+  
+              </div>
+
+
+              
+              <button (click)="addMenu()" type="submit" class="btn btn-dark w-100 text-white ">Add</button>
+    
+        </form>    
+</div>
+</div>

@@ -1,0 +1,59 @@
+.cont {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.login {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(9, 8, 8, 0.721);
+    font-family: "Gotu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    width: 80%;
+    max-width: 400px;
+    max-height: 90%;
+    overflow-y: auto;
+}
+
+.login button {
+    background-color: rgba(182, 59, 14, 0.866);
+}
+
+.login button:hover {
+    background-color: rgb(230, 70, 12);
+}
+
+.login input {
+    background-color: transparent;
+    color: white;
+}
+
+.login h1 {
+    font-size: 35px;
+    font-family: "Gotu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media (max-width: 768px) {
+    .login {
+        top: 10%;
+        width: 90%;
+    }
+}

@@ -1,0 +1,25 @@
+.header{
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        line-height: 17px;   
+    }
+    
+    .container {
+        text-align: center;
+            
+    }
+    span{
+        font-family: "Gotu", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+        color: black;
+    }
+    .sp{
+        font-size: 15px;
+        color: white;
+    }
+    p{
+        cursor: pointer;
+    }
